@@ -1,0 +1,16 @@
+{
+    "name": "laravel-basic-authentication/laravel-authentication",
+    "description": "All Basic authentications",
+    "authors": [
+        {
+            "name": "Lucky Saini",
+            "email": "luckys383@gmail.com"
+        },
+        {
+            "name": "Lakhwinder Singh",
+            "email": "lakhwinder.singh@logicielsolutions.co.in"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
