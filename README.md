@@ -10,7 +10,7 @@ Installation
 ------------------------
 Require this package in your composer.json and update composer. 
 ```php
-"lucky-saini/laravel-basic-authentication": "~0.1.0"
+"lucky-saini/laravel-basic-authentication": "~1.0.0"
 ```
 
 After updating composer, add the ServiceProvider to the providers array in config/app.php
@@ -22,6 +22,14 @@ After setup all the above things a command will be added in `php artisan`. This 
 ```php
 php artisan luckys:auth [scaffold_for]
 ```
+
+To publish the config settings in Laravel 5.2 use:
+
+```php
+php artisan vendor:publish --provider="Luckys\BasicAithentication\BasiAuthenticationServiceProvider"
+```
+
+This will add an `admin-auth.php` config file to your config folder.
 
 Set admin password related setting in `config/auth.php` file. Like
 ```php
