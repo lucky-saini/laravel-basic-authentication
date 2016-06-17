@@ -17,3 +17,5 @@ After updating composer, add the ServiceProvider to the providers array in confi
 ```php
 Luckys\BasicAithentication\BasiAuthenticationServiceProvider::class,
 ```
+Documentation
+This plugin is an enhancement of Laravel make:auth functionality. Laravel provide us only single authentication. But in this plugin we can create two authentications. As most of the sites we have two sections one is Frontend (for public) site and second is Admin (for site owner). This package provide you to create both types of authentications.
