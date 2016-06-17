@@ -23,6 +23,29 @@ After setup all the above things a command will be added in `php artisan`. This 
 php artisan luckys:auth [scaffold_for]
 ```
 
+Set admin password related setting in `config/auth.php` file. Like
+```php
+  'admin_users' => [
+    'provider' => 'users',
+    'email' => 'admin.auth.emails.password',
+    'table' => 'password_resets',
+    'expire' => 60,
+  ],
+```
+After this code will look like this:
+```php
+  'passwords' => [
+    'users' => [......],
+
+    'admin_users' => [
+        'provider' => 'users',
+        'email' => 'admin.auth.emails.password',
+        'table' => 'password_resets',
+        'expire' => 60,
+    ],
+  ],
+```
+
 Documentation
 -------------------------
 This plugin is an enhancement of Laravel make:auth functionality. Laravel provide us only single authentication. But in this plugin we can create two authentications. As most of the sites we have two sections one is Frontend (for public) site and second is Admin (for site owner). This package provide you to create both types of authentications.
