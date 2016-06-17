@@ -42,6 +42,12 @@ class AuthAdminController extends Controller
     public function __construct()
     {
         $this->middleware($this->guestMiddleware(), ['except' => 'logout']);
+        $prefix = config('admin-auth.prefix');
+
+        if($prefix) {
+            $this->redirectTo = "/" . $prefix . "/home";
+            $this->redirectAfterLogout = "/" . $prefix . "/login";
+        }
     }
 
     /**

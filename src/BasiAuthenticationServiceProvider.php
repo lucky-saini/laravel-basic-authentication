@@ -18,6 +18,9 @@ class BasiAuthenticationServiceProvider extends ServiceProvider
         
         // App::singleton('Luckys\BasicAithentication\Console\Kernel');
         // include __DIR__ . '/Console/Kernel.php';
+         $this->publishes([
+            __DIR__.'/Config/admin-auth.php' => config_path('admin-auth.php'),
+        ]);
     }
 
     /**
