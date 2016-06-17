@@ -17,6 +17,12 @@ After updating composer, add the ServiceProvider to the providers array in confi
 ```php
 Luckys\BasicAithentication\BasiAuthenticationServiceProvider::class,
 ```
+
+After setup all the above things a command will be added in `php artisan`. This command copy all the files in appropriate folders. In this command we provided user to create only required scaffolding feature. You can set specific argument according to requirement. It has following arguments `admin`, `frontend` and `both`. `both` is selected by default if this argument is empty.
+```php
+php artisan luckys:auth [scaffold_for]
+```
+
 Documentation
 -------------------------
 This plugin is an enhancement of Laravel make:auth functionality. Laravel provide us only single authentication. But in this plugin we can create two authentications. As most of the sites we have two sections one is Frontend (for public) site and second is Admin (for site owner). This package provide you to create both types of authentications.
