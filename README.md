@@ -10,7 +10,7 @@ Installation
 ------------------------
 Require this package in your composer.json and update composer. 
 ```php
-"lucky-saini/laravel-basic-authentication": "~1.0.0"
+"lucky-saini/laravel-basic-authentication": "~1.0.2"
 ```
 
 After updating composer, add the ServiceProvider to the providers array in config/app.php
